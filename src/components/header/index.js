@@ -18,6 +18,9 @@ const Header = () => {
           type="text"
           placeholder="Digite o username para pesquisa..."
           onChange={(event) => setUsernameForSearch(event.target.value)}
+          onKeyDown = {(event) => {
+            if (event.key === 'Enter') submitGetUser();
+          }}
         />
         <button type="submit" onClick={submitGetUser}>
           <span>Buscar</span>

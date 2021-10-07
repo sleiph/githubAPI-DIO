@@ -7,7 +7,7 @@ const Profile = () => {
 
   return (
     <S.Wrapper>
-      <S.WrapperImage src={githubState.user.avatar} alt="Avatar of user" />
+      <S.WrapperImage src={githubState.user.avatar} alt="Avatar do usuário" />
       <S.WrapperInfoUser>
         <div>
           <h1>{githubState.user.name}</h1>
@@ -22,11 +22,11 @@ const Profile = () => {
             </a>
           </S.WrapperUserGeneric>
           <S.WrapperUserGeneric>
-            <h3>Company:</h3>
+            <h3>Firma:</h3>
             <span>{githubState.user.company}</span>
           </S.WrapperUserGeneric>
           <S.WrapperUserGeneric>
-            <h3>Location:</h3>
+            <h3>Local:</h3>
             <span>{githubState.user.location}</span>
           </S.WrapperUserGeneric>
           <S.WrapperUserGeneric>
@@ -38,11 +38,11 @@ const Profile = () => {
         </div>
         <S.WrapperStatusCount>
           <div>
-            <h4>Followers</h4>
+            <h4>Seguidores</h4>
             <span> {githubState.user.followers}</span>
           </div>
           <div>
-            <h4>Followings</h4>
+            <h4>Seguindo</h4>
             <span> {githubState.user.following}</span>
           </div>
           <div>
